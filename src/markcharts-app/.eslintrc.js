@@ -25,7 +25,14 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    '@typescript-eslint/consistent-type-definitions': ["error", "type"]
+    '@typescript-eslint/consistent-type-definitions': ["error", "type"],
+    'import/no-unresolved': 'off',
+    'indent': 'off',
+    '@typescript-eslint/indent': [
+      'error',
+      2
+    ],
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   settings: {
     "import/resolver": {
